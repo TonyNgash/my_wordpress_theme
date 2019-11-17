@@ -1,0 +1,900 @@
+/*
+@package tony_ngash_everydayapps
+*/
+/*MIXINS
+---------------------------------------------------------------------------------
+*/
+@mixin animate($attr, $time){
+  -webkit-transition: $attr $time ease;
+  -moz-transition: $attr $time ease;
+  -ms-transition: $attr $time ease;
+  -o-transition: $attr $time ease;
+  transition: $attr $time ease;
+}
+@mixin transform($val){
+    -webkit-transform: $val;
+    -moz-transform: $val;
+    -ms-transform: $val;
+    -o-transform: $val;
+    transform: $val;
+}
+/*KEYFRAMES 
+---------------------------------------------------------------------------------
+*/
+
+@keyframes navLinksFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*FONT ICON 
+---------------------------------------------------------------------------------
+*/
+@font-face {
+  font-family: Noasarck;  
+  src: url(../fonts/Noasarck_Largo.otf);  
+  font-weight: normal;  
+}
+@font-face {
+  font-family: PinkSans;  
+  src: url(../fonts/PinkSans-100.ttf);  
+  font-weight: normal;  
+  }
+@font-face {
+  font-family: 'ingrotel-icon';
+  src:  url('../fonts/ingrotel-icon.eot?3h794u');
+  src:  url('../fonts/ingrotel-icon.eot?3h794u#iefix') format('embedded-opentype'),
+    url('../fonts/ingrotel-icon.ttf?3h794u') format('truetype'),
+    url('../fonts/ingrotel-icon.woff?3h794u') format('woff'),
+    url('../fonts/ingrotel-icon.svg?3h794u#ingrotel-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.ingrotel-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ingrotel-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ingrotel-ingrotel_font_logo:before {
+  content: "\e907";
+}
+.ingrotel-audio:before {
+  content: "\e900";
+}
+.ingrotel-chevron-left:before {
+  content: "\e901";
+}
+.ingrotel-chevron-right:before {
+  content: "\e902";
+}
+.ingrotel-close:before {
+  content: "\e903";
+}
+.ingrotel-comment:before {
+  content: "\e904";
+}
+.ingrotel-link:before {
+  content: "\e905";
+}
+.ingrotel-loading:before {
+  content: "\e906";
+}
+.ingrotel-menu:before {
+  content: "\e908";
+}
+.ingrotel-pencil:before {
+  content: "\e909";
+}
+.ingrotel-pics:before {
+  content: "\e90a";
+}
+.ingrotel-search:before {
+  content: "\e90b";
+}
+.ingrotel-share:before {
+  content: "\e90c";
+}
+.ingrotel-tag:before {
+  content: "\e90d";
+}
+.ingrotel-video:before {
+  content: "\e90e";
+}
+
+/*GENERIC 
+---------------------------------------------------------------------------------
+*/
+.test-red{
+  border: solid red 1px;
+}
+.test-blue{
+  border: solid blue 1px; 
+}
+.test-green{
+  border: solid green 1px;
+}
+.test-yellow{
+  border: solid yellow 5px;
+}
+body{
+  font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+h1{
+  font-family: 'PinkSans', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+h2{
+  font-family: 'PinkSans', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+h3{
+  font-family: 'PinkSans', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+  
+}
+.background-image-setup{
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*
+============================TOP MENU NAVIGATION================================== 
+---------------------------------------------------------------------------------
+*/
+.top-menu-navigation-section{
+
+}
+.ingrotel-logo-box{
+  margin-left: 10px;
+    a{
+      color: #e2e2e2;
+    }
+}
+.ingrotel-nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #252525;
+    text-transform: uppercase;
+    font-family: 'PinkSans', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+} 
+
+.ingrotel-nav-ul{
+  z-index: 101;
+  position: absolute;
+  right: 0px;
+  height: 50vh;
+  top:5.8vh;
+  background-color: #424242;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  
+  padding-top: 5px;
+  padding-right:1.2rem;
+  align-items: center;
+  width: 40%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+  li{
+    list-style: none;
+    opacity: 0;
+    a{
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: .1rem;
+
+    }
+  }
+}   
+.nav-active{
+  transform: translateX(0%);
+}
+.burger-container{
+  position: absolute;
+  right:0;
+  background-color: #424242;
+}
+.burger{
+  padding:13px;
+  div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+}
+.toggle{
+  .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .line2{
+    opacity: 0;
+  }
+  .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+/*
+=============================HOME PAGE VIDEO BACKGROUND AND OVERLAY========================
+---------------------------------------------------------------------------------
+*/
+
+.ingrotel-video-header{
+  
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #171717;
+}
+.fullscreen-video-wrap{
+  position: absolute;
+  top:8vh;
+  left: 0;
+  right: 0;
+  height: 60vh;
+  overflow: hidden;
+}
+.video{
+    min-width: 100%;
+    min-height:100%;
+  }
+
+.ingrotel-video-overlay{
+  height: 60vh;
+  width:100vw;
+  position: absolute;
+  top:8vh;
+  left: 0;
+  background: rgb(10,181,191);
+  background: linear-gradient(180deg, rgba(10,181,191,0.30885857761073177) 0%, rgba(0,0,0,1) 100%);
+}
+
+/*
+=============================HOME PAGE HERO SECTION======================================== 
+---------------------------------------------------------------------------------
+*/
+
+.hero-heading-container{
+  text-align: left;
+  padding-top: 10px;
+}
+.hero-heading{
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+.hero-text-container{
+  padding-top: 10px;
+}
+.hero-text{
+  font-size: 11px;
+  color: #fff;
+}
+
+
+/*
+=============================HOME PAGE ABOUT SECTION=============================
+---------------------------------------------------------------------------------
+*/
+.about-section-container{
+  background-color: #f5f5f5;
+  padding-bottom: 100px;
+}
+.about-section-heading-container{
+  margin-top: 100px;
+}
+.about-section-heading{
+  color:#535050;
+  font-size: 4.2em;
+
+}
+.about-section-text-container{
+  margin-top: 10px;
+  font-size: .8em;
+}
+
+.about-section-sub-heading-container{
+  margin-top: 10px;
+  
+}
+.about-section-sub-heading{
+  color:#535050; 
+  text-align: center;
+  font-size: 2em;
+}
+
+.about-section-virtues-container{
+  margin-top: 10px; 
+
+}
+.virtue-box{ 
+  background: blue;
+  width:80px;
+  height: 80px;
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+  span{ 
+      color: #fff;
+      font-size: 1.6em;
+    }
+}
+
+.virtue-title{
+  margin-top:5px;
+  text-align: center;
+  h3{
+    font-size: 1.5em;
+  }
+}
+
+
+/*
+=============================HOME PAGE PRODUCTS SECTION=============================
+------------------------------------------------------------------------------------
+*/
+.products-section-container-top{
+
+}
+.products-section-heading-container{
+  margin-top: 100px;
+}
+.products-section-heading{
+  color: #fff;
+  font-size: 4.2em;
+}
+.products-section-text-container{
+  margin-top: 10px;
+}
+.products-section-text{
+  color: #fff;
+  font-size: .8em;
+}
+.products-section-container-bottom{
+  padding-top: 20px;
+  background-color: #171717;
+}
+.products-section-products-container{
+  margin-top: 100px;
+}
+.product-box{
+  width:180px;
+  height:250px;
+  position: relative; 
+  background: gray; 
+  margin: auto;
+  margin-bottom: 20px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
+
+  }
+.product-box-overlay{
+  width:180px;
+  height:250px;
+  position: absolute; 
+  background-color: #171717;
+  opacity: 0.7;
+  margin: auto;
+  margin-bottom: 20px;
+  
+}
+.product-name{
+  z-index: 1;
+  position: absolute;
+  bottom:0;
+  left:0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-right: solid 8px #3641ff;
+  margin: auto;
+  text-align: center;
+  
+  h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2em;
+  }
+}
+/*
+=============================HOME PAGE SERVICES SECTION=============================
+------------------------------------------------------------------------------------
+*/
+.services-section-container{
+  background-color: #f5f5f5;
+  padding-bottom: 100px;
+}
+.services-section-heading-container{
+  margin-top: 100px;
+}
+.services-section-heading{
+  color:#535050;
+  font-size: 4.2em;
+}
+
+.services-section-text-container{
+  margin-top: 10px;
+  p{
+    font-size: .8em;
+  }
+}
+.services-section-video-container{
+  margin-top: 10px;
+}
+.services-section-video-heading{
+  background-color: #fff;
+  padding:9px;
+    h1{
+      font-size: 26px;
+      line-height: 0.9em;
+    }
+    h2{
+      font-size: 17px;
+    }
+    p{font-size: 12px;
+    }
+}
+
+.video-wrapper{
+  position: relative;
+  height: 0;
+  padding-top: 1.5625rem;
+  padding-bottom: 56.25%;
+}
+.video-wrapper--shadow {
+    -webkit-box-shadow: 0 1.25rem 4.375rem rgba(0,0,0,.5);
+    -moz-box-shadow: 0 1.25rem 4.375rem rgba(0,0,0,.5);
+    box-shadow: 0 1.25rem 4.375rem rgba(0,0,0,.5);
+}
+.margin-zeta-bottom {
+    margin-bottom: 4.375rem!important;
+}
+.video-wrapper__placeholder {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+/*
+=============================FOOTER SECTION=============================
+------------------------------------------------------------------------
+*/
+.footer-section-container{
+  background-color: #2e2e2e;
+  
+}
+.footer-socials-container{
+  margin-top:30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.fa {
+  padding: 10px;
+  font-size: 14px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #3d3d3d;
+  color: #fff;
+}
+.fa-facebook{
+  &:hover,
+  &:focus{
+    background-color: #3b5998;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.fa-twitter{
+  &:hover,
+  &:focus{
+    background-color: #55ACEE;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.fa-instagram{
+  &:hover,
+  &:focus{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.fa-youtube{
+  &:hover,
+  &:focus{
+    background-color: #c4302b;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.fa-linkedin{
+  &:hover,
+  &:focus{
+    background-color: #0e76a8;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.footer-section-menu{
+  margin-top: 30px;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  
+  ul{
+    
+    height: 300px;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    li{
+      list-style: none;
+      text-align: center;
+      a{
+        font-family: 'PinkSans', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        opacity: 0.7;
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:visited{opacity: 1;}
+      }
+    }
+  }
+}
+.footer-section-bottom-container{
+  background-color: #171717;
+  padding-top: 15px;
+}
+.footer-section-bottom-links{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  ul{
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    li{
+      list-style: none;
+      text-align: center;
+      a{
+        text-decoration: none; 
+        opacity: .6;
+        font-size: 12px;
+        color: #fff;
+        margin-left: 5px;
+        &:hover{opacity: 1;}
+      }
+    }
+  }
+}
+.footer-section-bottom-text{
+  p{
+    font-size: 12px;
+    color: #5d5757;
+    text-align: center;
+    a{
+      text-decoration: none; 
+      opacity: .5;
+      font-size: 12px;
+      color: #fff;
+      &:hover,
+      &:focus,
+      &:visited{opacity: 1;}
+    }
+  }
+}
+/*
+=============================MEDIA QUERIES==================================
+----------------------------------------------------------------------------
+*/
+/*-------------------------------------------------------------------------*/
+@media screen and(min-width: 320px){
+  /*=======ABOUT=========*/
+  .virtue-box{ 
+  
+  width:100px;
+  height: 100px;
+  
+  padding-top: 30px;
+  span{ 
+      font-size: 3.2em;
+    }
+  }
+  .virtue-title{
+    h3{
+      font-size: 1.8em;
+    }
+  }
+
+}
+/*-------------------------------------------------------------------------*/
+@media screen and(min-width: 576px){
+  /*=======HERO=========*/
+  .hero-heading{
+    font-size: 4em; 
+  }
+
+}
+/*-------------------------------------------------------------------------*/
+@media screen and(min-width: 768px){
+  /*=======HERO=========*/
+  .hero-heading{
+    font-size: 5em; 
+  }
+
+}
+/*-------------------------------------------------------------------------*/
+@media screen and(min-width: 992px){
+  /*=======NAVIGATION=========*/
+  .top-menu-navigation-section{
+
+  }
+  .ingrotel-logo-box{
+    margin-left: 33px;
+  }
+  .ingrotel-nav{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 8vh;
+      background-color: #252525;
+      text-transform: uppercase;
+      font-family: 'PinkSans', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+  } 
+
+  .ingrotel-nav-ul{
+    z-index: unset;
+    position: unset;
+    right: unset;
+    height: unset;
+    top: unset;
+    padding: unset;
+    background-color: unset;
+    align-items: unset;
+    width: 500px;
+    transform: unset;
+    transition: unset;
+
+    margin-right: 33px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    li{
+      list-style: none;
+      opacity: unset;
+      &.active{
+        a {
+          color:#fff;
+          opacity: 1;
+            &:after{
+              @include transform( translateY(0) );
+              opacity: 1;
+            }
+         }
+      }
+      a{
+        color: #fff;
+        position: relative;
+        text-decoration: none;
+        letter-spacing: .1rem;
+        opacity: .6;
+        padding:17px;
+        &:hover,
+        &:focus{
+          opacity: 1;
+            &:after{
+              @include transform( translateY(0) );
+              opacity: 1;
+            }
+        }
+        &:after{
+          z-index: 2;
+          content: '';
+          position: absolute;
+          right: 1px;
+          bottom: 0;
+          left: 0;
+          height: .1875rem;
+          background-color: #3641ff;
+          @include animate(all, 320ms);
+          opacity: 0; 
+          @include transform( translateY(-20px) ); 
+        }
+      }
+    }
+  }   
+  
+  .burger-container{
+    display: none;
+  }
+  
+  /*=======VIDEO BG======*/
+  .ingrotel-video-header{
+    height: 100vh;
+  }
+  .fullscreen-video-wrap{
+    height: 100vh;
+    overflow: hidden;
+  }
+  .ingrotel-video-overlay{
+    height: 100vh;
+    width:100vw;
+    
+  }
+
+  /*=======HERO=========*/
+  .hero-heading{
+    font-size: 6em; 
+  }
+  .hero-text{
+   font-size: 1em; 
+  }
+  /*=======FOOTER TOP=========*/
+  .footer-section-container{
+    padding-bottom: 20px;
+  }
+  .footer-socials-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .footer-section-menu{
+    height: 40px;
+    padding: 0;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: flex-start;
+    ul{
+      height:40px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      li{
+        list-style: none;
+        text-align: center;
+        a{
+          font-family: 'PinkSans', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
+          text-transform: uppercase;
+          color: #fff;
+          opacity: 0.7;
+          text-decoration: none;
+          &:hover,
+          &:focus,
+          &:visited{opacity: 1;}
+        }
+      }
+    }
+  }
+  .footer-section-bottom-container{
+    padding-top: 10px;
+  }
+  .footer-section-bottom-links{
+    padding: 0;
+    margin: 0;
+    ul{
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      li{
+        list-style: none;
+        text-align: center;
+        a{
+          text-decoration: none; 
+          opacity: .6;
+          font-size: 12px;
+          color: #fff;
+          &:hover{opacity: 1;}
+        }
+      }
+    }
+  }
+  .footer-section-bottom-text{
+    p{
+      font-size: 12px;
+      color: #5d5757;
+      text-align: center;
+      a{
+        text-decoration: none; 
+        opacity: .5;
+        font-size: 12px;
+        color: #fff;
+        &:hover,
+        &:focus,
+        &:visited{opacity: 1;}
+      }
+    }
+  }
+
+
+}
+
+/*-------------------------------------------------------------------------*/
+@media screen and(min-width: 1280px){
+  .ingrotel-video-header{
+    height: 100vh;
+  }
+  .fullscreen-video-wrap{
+    height: 100vh;
+    overflow: hidden;
+  }
+  .ingrotel-video-overlay{
+    height: 100vh;
+    width:100vw;
+    
+  }
+
+
+}
+/*-------------------------------------------------------------------------*/
