@@ -743,7 +743,7 @@ h3 {
     text-decoration: none;
     letter-spacing: 0.1rem;
     opacity: 0.6;
-    padding: 17px;
+    padding: 19px;
   }
   .ingrotel-nav-ul li a:hover, .ingrotel-nav-ul li a:focus {
     opacity: 1;
@@ -894,6 +894,23 @@ h3 {
 }
 /*-------------------------------------------------------------------------*/
 @media screen and (min-width: 1280px) {
+  /*=======NAVIGATION MENU===================*/
+  .ingrotel-nav-ul {
+    margin-right: 33px;
+  }
+  .ingrotel-nav-ul li a {
+    padding: 18px;
+  }
+  /*=======HERO=========*/
+  .hero-heading {
+    font-size: 10em;
+  }
+
+  .hero-text {
+    font-size: 1em;
+  }
+
+  /*========VIDEO=========*/
   .ingrotel-video-header {
     height: 100vh;
   }

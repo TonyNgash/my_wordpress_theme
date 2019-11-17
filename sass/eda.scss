@@ -745,7 +745,7 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
         text-decoration: none;
         letter-spacing: .1rem;
         opacity: .6;
-        padding:17px;
+        padding:19px;
         &:hover,
         &:focus{
           opacity: 1;
@@ -882,6 +882,76 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
 
 /*-------------------------------------------------------------------------*/
 @media screen and(min-width: 1280px){
+  /*=======NAVIGATION MENU===================*/
+   .ingrotel-nav-ul{
+    // z-index: unset;
+    // position: unset;
+    // right: unset;
+    // height: unset;
+    // top: unset;
+    // padding: unset;
+    // background-color: unset;
+    // align-items: unset;
+    // width: 500px;
+    // transform: unset;
+    // transition: unset;
+
+    margin-right: 33px;
+    // display: flex;
+    // flex-flow: row wrap;
+    // justify-content: flex-start;
+    li{
+      // list-style: none;
+      // opacity: unset;
+      &.active{
+        a {
+          // color:#fff;
+          // opacity: 1;
+            &:after{
+              // @include transform( translateY(0) );
+              // opacity: 1;
+            }
+         }
+      }
+      a{
+        // color: #fff;
+        // position: relative;
+        // text-decoration: none;
+        // letter-spacing: .1rem;
+        // opacity: .6;
+        padding:18px;
+        &:hover,
+        &:focus{
+          // opacity: 1;
+            &:after{
+              // @include transform( translateY(0) );
+              // opacity: 1;
+            }
+        }
+        &:after{
+          // z-index: 2;
+          // content: '';
+          // position: absolute;
+          // right: 1px;
+          // bottom: 0;
+          // left: 0;
+          // height: .1875rem;
+          // background-color: #3641ff;
+          // @include animate(all, 320ms);
+          // opacity: 0; 
+          // @include transform( translateY(-20px) ); 
+        }
+      }
+    }
+  }   
+  /*=======HERO=========*/
+  .hero-heading{
+    font-size: 10em; 
+  }
+  .hero-text{
+   font-size: 1em; 
+  }
+  /*========VIDEO=========*/
   .ingrotel-video-header{
     height: 100vh;
   }
