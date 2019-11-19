@@ -13,13 +13,23 @@ get_header();  ?>
 		</video>
 	</div>
 	<div class="ingrotel-video-overlay"></div>
+	<div class="home-video-decorative-columns">
+		<span class="home-video-decorative-column-1"></span>
+		<span class="home-video-decorative-column-2"></span>
+		<span class="home-video-decorative-column-3"></span>
+		<span class="home-video-decorative-column-4"></span>
+		<span class="home-video-decorative-column-5"></span>
+		<span class="home-video-decorative-column-6"></span>
+		<span class="home-video-decorative-column-7"></span>
+		<span class="home-video-decorative-column-8"></span>
+	</div>
 	<div class="hero-content-container">
 		<div class="container">
 		    <div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					
 					<div class="hero-heading-container">
-						<h1 class="hero-heading"><?php bloginfo('description'); ?></h1>
+						<h1 class="hero-heading">solutions for telcom companies</h1>
 					</div><!-- .hero-heading-container -->
 					<div class="hero-text-container">
 						<p class="hero-text">Ingrotel is a leader in manufacturing and distribution for control cable and electro-mechanical products.
@@ -40,7 +50,7 @@ get_header();  ?>
 		<span class="home-video-unequal-box-7"></span>
 		<span class="home-video-unequal-box-8"></span>
 	</div>
-	
+
 </div><!-- .ingrotel-video-header -->
 
 	

@@ -271,8 +271,11 @@ h3{
   position: absolute;
   top:8vh;
   left: 0;
-  background: rgb(10,181,191);
-  background: linear-gradient(180deg, rgba(10,181,191,0.30885857761073177) 0%, rgba(0,0,0,1) 100%);
+  background: rgb(23,23,23);
+  background: linear-gradient(180deg, rgba(23,23,23,0.7346288857339811) 0%, rgba(23,23,23,0) 0%, rgba(23,23,23,0.8998949921765581) 83%, rgba(23,23,23,1) 100%);
+
+  // background: rgb(10,181,191);
+  // background: linear-gradient(180deg, rgba(10,181,191,0.30885857761073177) 0%, rgba(0,0,0,1) 100%);
 }
 
 /*
@@ -894,7 +897,7 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
 }
    .ingrotel-nav-ul{
     margin-right: 33px;
-    border:solid 1px red;
+    
     li{
       &.active{
         a {
@@ -921,11 +924,18 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
 
   /*=======HERO=========*/
   .hero-content-container{
-    background-color: #fff;
-    opacity: .5;
+    padding-top: 184px;
+    margin-bottom: 116px;
+    .container{
+      width: 707px;
+      background-color: #fff;
+    }
   }
   .hero-heading{
-    font-size: 10em; 
+    font-size: 7em;
+    letter-spacing: 10px;
+    line-height: .9em;
+    
   }
   .hero-text{
    font-size: 1em; 
@@ -948,34 +958,228 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
     width:100vw;
     // border: solid 1px yellow;
   }
-  /*========VIDEO DECORATION COLUMNS==================*/
+  /*========VIDEO HOME UNEQUAL BOXES==================*/
   .home-video-unequal-bottom-boxes{
-    height: 20vh;
-    background-color: blue;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+    height: 15vh;
+    span{
+      float: left;
+    }
   }
   .home-video-unequal-box-1, .home-video-unequal-box-2{
-    width:12.5vw;
+    width:12.5%;
     height: 15vh;
     background-color: #171717;
   }
   .home-video-unequal-box-3, .home-video-unequal-box-4{
-    width:12.5vw;
+    width:12.5%;
     height: 5vh;
     background-color: #171717;
   }
   .home-video-unequal-box-5, .home-video-unequal-box-6{
-    width:12vw;
+    width:12.5%;
     height: 9vh;
     background-color: #171717;
   }
   .home-video-unequal-box-7, .home-video-unequal-box-8{
-    width:12vw;
+    width:12.5%;
     height: 15vh;
     background-color: #171717;
   }
+  /*===============VIDEO DECORATION COLUMNS==================*/
+  .home-video-decorative-columns{
+    position: absolute;
+    top:8vh;
+    height: 115vh;
+    width: 100vw;
+    span{
+      float: left;
+    }
+  }
+  .home-video-decorative-column-1{
+    width:12.3%;
+    height: 100%;
+    position:relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width:1px;
+      height:78%;
+      bottom:0;
+      right:0;
+      background-color:#fff;
+      opacity:.1;
+    }
+    &:after{
+      content:'';
+      position:absolute;
+      top:21.1%;
+      right:-4px;
+      width:.625rem;
+      height:.625rem;
+      border: solid 2px #fff;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+  .home-video-decorative-column-2{
+    width:12.5%;
+    height: 100%;
+    position:relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width:1px;
+      height:11%;
+      bottom:0;
+      right:0;
+      background-color:#fff;
+      opacity:.1;
+    }
+    &:after{
+      content:'';
+      position:absolute;
+      top:88%;
+      right:-4px;
+      width:.625rem;
+      height:.625rem;
+      border: solid 2px #fff;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+  .home-video-decorative-column-3{
+    width:12.25%;
+    height: 100%;
+    position:relative;
+    
+  }
+  .home-video-decorative-column-4{
+    width:12.5%;
+    height: 100%;
+    position:relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width:1px;
+      height:88%;
+      bottom:0;
+      right:0;
+      background-color:#fff;
+      opacity:.1;
+    }
+    &:after{
+      content:'';
+      position:absolute;
+      right:-4px;
+      top:11%;
+      width:.625rem;
+      height:.625rem;
+      border: solid 2px #fff;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+  .home-video-decorative-column-5{
+    width:12.17%;
+    height: 100%;
+    position:relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width:1px;
+      height:12%;
+      bottom:0;
+      right:0;
+      background-color:#fff;
+      opacity:.1;
+    }
+    &:after{
+      content:'';
+      position:absolute;
+      top:87%;
+      right:-4px;
+      width:.625rem;
+      height:.625rem;
+      border: solid 2px #fff;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+  .home-video-decorative-column-6{
+    width:12.5%;
+    height: 100%;
+    position:relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width:1px;
+      height:60%;
+      bottom:0;
+      right:0;
+      background-color:#fff;
+      opacity:.1;
+    }
+    &:after{
+      content:'';
+      position:absolute;
+      top:39%;
+      right:-4px;
+      width:.625rem;
+      height:.625rem;
+      border: solid 2px #fff;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+  .home-video-decorative-column-7{
+    width:12.5%;
+    height: 100%;
+    position:relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width:1px;
+      height:29%;
+      bottom:0;
+      right:0;
+      background-color:#fff;
+      opacity:.1;
+    }
+    &:after{
+      content:'';
+      position:absolute;
+      top:70%;
+      right:-4px;
+      width:.625rem;
+      height:.625rem;
+      border: solid 2px #fff;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+  .home-video-decorative-column-8{
+    width:12.5%;
+    height: 100%;
+    position:relative;
+  }  
 
 
 }
@@ -988,6 +1192,10 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
   position: relative;
   width: 100vw;
   height: 50vh;
+}
+.ingrotel-fader-image{
+  position: absolute;
+  z-index: 110;
 }
 .ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4{
   display: block;

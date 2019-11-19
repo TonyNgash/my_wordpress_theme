@@ -12,6 +12,10 @@ get_header();  ?>
   <img src="<?php bloginfo('template_url'); ?>/img/image-9" class="ingrotel-fader-image-2">
   <img src="<?php bloginfo('template_url'); ?>/img/image-18" class="ingrotel-fader-image-3">
   <img src="<?php bloginfo('template_url'); ?>/img/image-19" class="ingrotel-fader-image-4">
+  
+<!--   <div class="fg">
+    
+  </div> -->
   <div class="ingrotel-image-fader-overlay"></div>
   <div class="ingrotel-page-title-container"> 
     <div class="container">

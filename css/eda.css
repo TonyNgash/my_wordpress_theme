@@ -269,8 +269,8 @@ h3 {
   position: absolute;
   top: 8vh;
   left: 0;
-  background: #0ab5bf;
-  background: linear-gradient(180deg, rgba(10, 181, 191, 0.3088585776) 0%, black 100%);
+  background: #171717;
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0.7346288857) 0%, rgba(23, 23, 23, 0) 0%, rgba(23, 23, 23, 0.8998949922) 83%, #171717 100%);
 }
 
 /*
@@ -901,19 +901,24 @@ h3 {
 
   .ingrotel-nav-ul {
     margin-right: 33px;
-    border: solid 1px red;
   }
   .ingrotel-nav-ul li a {
     padding: 18px;
   }
   /*=======HERO=========*/
   .hero-content-container {
+    padding-top: 184px;
+    margin-bottom: 116px;
+  }
+  .hero-content-container .container {
+    width: 707px;
     background-color: #fff;
-    opacity: 0.5;
   }
 
   .hero-heading {
-    font-size: 10em;
+    font-size: 7em;
+    letter-spacing: 10px;
+    line-height: 0.9em;
   }
 
   .hero-text {
@@ -937,37 +942,239 @@ h3 {
     width: 100vw;
   }
 
-  /*========VIDEO DECORATION COLUMNS==================*/
+  /*========VIDEO HOME UNEQUAL BOXES==================*/
   .home-video-unequal-bottom-boxes {
-    height: 20vh;
-    background-color: blue;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+    height: 15vh;
+  }
+  .home-video-unequal-bottom-boxes span {
+    float: left;
   }
 
   .home-video-unequal-box-1, .home-video-unequal-box-2 {
-    width: 12.5vw;
+    width: 12.5%;
     height: 15vh;
     background-color: #171717;
   }
 
   .home-video-unequal-box-3, .home-video-unequal-box-4 {
-    width: 12.5vw;
+    width: 12.5%;
     height: 5vh;
     background-color: #171717;
   }
 
   .home-video-unequal-box-5, .home-video-unequal-box-6 {
-    width: 12vw;
+    width: 12.5%;
     height: 9vh;
     background-color: #171717;
   }
 
   .home-video-unequal-box-7, .home-video-unequal-box-8 {
-    width: 12vw;
+    width: 12.5%;
     height: 15vh;
     background-color: #171717;
+  }
+
+  /*===============VIDEO DECORATION COLUMNS==================*/
+  .home-video-decorative-columns {
+    position: absolute;
+    top: 8vh;
+    height: 115vh;
+    width: 100vw;
+  }
+  .home-video-decorative-columns span {
+    float: left;
+  }
+
+  .home-video-decorative-column-1 {
+    width: 12.3%;
+    height: 100%;
+    position: relative;
+  }
+  .home-video-decorative-column-1:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 78%;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0.1;
+  }
+  .home-video-decorative-column-1:after {
+    content: "";
+    position: absolute;
+    top: 21.1%;
+    right: -4px;
+    width: 0.625rem;
+    height: 0.625rem;
+    border: solid 2px #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .home-video-decorative-column-2 {
+    width: 12.5%;
+    height: 100%;
+    position: relative;
+  }
+  .home-video-decorative-column-2:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 11%;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0.1;
+  }
+  .home-video-decorative-column-2:after {
+    content: "";
+    position: absolute;
+    top: 88%;
+    right: -4px;
+    width: 0.625rem;
+    height: 0.625rem;
+    border: solid 2px #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .home-video-decorative-column-3 {
+    width: 12.25%;
+    height: 100%;
+    position: relative;
+  }
+
+  .home-video-decorative-column-4 {
+    width: 12.5%;
+    height: 100%;
+    position: relative;
+  }
+  .home-video-decorative-column-4:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 88%;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0.1;
+  }
+  .home-video-decorative-column-4:after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    top: 11%;
+    width: 0.625rem;
+    height: 0.625rem;
+    border: solid 2px #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .home-video-decorative-column-5 {
+    width: 12.17%;
+    height: 100%;
+    position: relative;
+  }
+  .home-video-decorative-column-5:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 12%;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0.1;
+  }
+  .home-video-decorative-column-5:after {
+    content: "";
+    position: absolute;
+    top: 87%;
+    right: -4px;
+    width: 0.625rem;
+    height: 0.625rem;
+    border: solid 2px #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .home-video-decorative-column-6 {
+    width: 12.5%;
+    height: 100%;
+    position: relative;
+  }
+  .home-video-decorative-column-6:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 60%;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0.1;
+  }
+  .home-video-decorative-column-6:after {
+    content: "";
+    position: absolute;
+    top: 39%;
+    right: -4px;
+    width: 0.625rem;
+    height: 0.625rem;
+    border: solid 2px #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .home-video-decorative-column-7 {
+    width: 12.5%;
+    height: 100%;
+    position: relative;
+  }
+  .home-video-decorative-column-7:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 29%;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0.1;
+  }
+  .home-video-decorative-column-7:after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    right: -4px;
+    width: 0.625rem;
+    height: 0.625rem;
+    border: solid 2px #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .home-video-decorative-column-8 {
+    width: 12.5%;
+    height: 100%;
+    position: relative;
   }
 }
 /*-------------------------------------------------------------------------*/
@@ -978,6 +1185,11 @@ h3 {
   position: relative;
   width: 100vw;
   height: 50vh;
+}
+
+.ingrotel-fader-image {
+  position: absolute;
+  z-index: 110;
 }
 
 .ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4 {
