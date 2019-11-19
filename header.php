@@ -20,6 +20,13 @@
 	<?php endif; ?>
 	<?php wp_head(); ?>
 </head>
+<?php 
+	// if( is_home() ):
+	// 	$someVarName = array('someClassName','someOtherClassName');
+	// else:
+	// 	$someVarName = array('notAclassname');
+	// endif;
+ ?>
 <body <?php body_class(); ?> >
 
 <header class="top-menu-navigation-section">

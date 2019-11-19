@@ -649,6 +649,10 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
     }
   }
 }
+
+
+
+
 /*
 =============================MEDIA QUERIES==================================
 ----------------------------------------------------------------------------
@@ -968,3 +972,313 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
 
 }
 /*-------------------------------------------------------------------------*/
+
+/*
+=============================INGROTEL PAGE TEMPLATE==================================
+----------------------------------------------------------------------------*/
+.ingrotel-image-fader-background{
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+}
+.ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4{
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 23vh;
+}
+.ingrotel-fader-image-1{
+  animation: fade1 10s infinite;
+}
+.ingrotel-fader-image-2{
+  animation: fade2 10s infinite;
+}
+.ingrotel-fader-image-3{
+  animation: fade3 10s infinite;
+}
+.ingrotel-fader-image-4{
+  animation: fade4 10s infinite;
+}
+@keyframes fade1{
+  0%{opacity: 1;}
+  25%{opacity: 0;}
+  50%{opacity: 0;}
+  75%{opacity: 0;}
+  100%{opacity: 1;}
+}
+@keyframes fade2{
+  0%{opacity: 0;}
+  25%{opacity: 1;}
+  50%{opacity: 0;}
+  75%{opacity: 0;}
+  100%{opacity: 0;}
+}
+@keyframes fade3{
+  0%{opacity: 0;}
+  25%{opacity: 0;}
+  50%{opacity: 1;}
+  75%{opacity: 0;}
+  100%{opacity: 0;}
+}
+@keyframes fade4{
+  0%{opacity: 0;}
+  25%{opacity: 0;}
+  50%{opacity: 0;}
+  75%{opacity: 1;}
+  100%{opacity: 0;}
+}
+.ingrotel-image-fader-overlay{
+  position: absolute;
+  width: 100vw;
+  height: 23vh;
+  // background-color: #171717;
+  background: rgb(23,23,23);
+background: linear-gradient(180deg, rgba(23,23,23,0.7346288857339811) 0%, rgba(23,23,23,0.8774860285911239) 0%, rgba(23,23,23,1) 100%);
+}
+
+.ingrotel-page-title-container{
+  padding-top: 100px;
+  background-color: #171717;
+  
+}
+.ingrotel-page-title-heading-container{
+}
+.ingrotel-page-title-heading{
+  color: #fff; 
+}
+.ingrotel-page-text-container{
+}
+.ingrotel-page-text{
+  font-size: .6em;
+  color: #fff;
+}
+.ingrotel-image-fader-blend-area{
+  width: 100vw;
+  height: 10vh;
+  background-color:#171717; 
+}
+/*
+=============================INGROTEL PAGE TEMPLATE----MEDIA QUERIES==================================
+----------------------------------------------------------------------------*/
+@media screen and (min-width: 400px){
+  /*-------------FADER IMAGE BACKGROUND SECTION-----------------*/
+  .ingrotel-image-fader-background{
+    height: 49vh;
+  }
+  .ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4{
+    height: 30vh;
+  }
+  .ingrotel-image-fader-overlay{
+    height: 40vh;
+  }
+
+
+}
+@media screen and (min-width: 450px){
+  /*-------------FADER IMAGE BACKGROUND SECTION-----------------*/
+  .ingrotel-image-fader-background{
+    height: 49vh;
+  }  
+  .ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4{
+    height: 40vh;
+  }
+  .ingrotel-image-fader-overlay{
+    height: 45vh;
+  }
+  .ingrotel-page-title-container{
+    padding-top: 120px;
+  }
+
+
+}
+@media screen and (min-width: 575px){
+  /*-------------FADER IMAGE BACKGROUND SECTION-----------------*/
+  .ingrotel-image-fader-background{
+    height: 59vh;
+  }  
+  .ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4{
+    height: 50vh;
+  }
+  .ingrotel-image-fader-overlay{
+    height: 55vh;
+  }
+  .ingrotel-page-title-container{
+    padding-top: 140px;
+  }
+  .ingrotel-page-title-heading{
+    font-size: 3.8em;
+  }
+  .ingrotel-page-text{
+    font-size: .8em;
+  }
+
+}
+@media screen and (min-width: 700px){
+  /*-------------FADER IMAGE BACKGROUND SECTION-----------------*/
+  .ingrotel-image-fader-background{
+    height: 71vh;
+  }  
+  .ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4{
+    height: 60vh;
+  }
+  .ingrotel-image-fader-overlay{
+    height: 65vh;
+  }
+  .ingrotel-page-title-container{
+    padding-top: 160px;
+  }
+  .ingrotel-page-title-heading{
+    font-size: 4.8em;
+  }
+  .ingrotel-page-text{
+    font-size: .9em;
+  }
+
+}
+@media screen and (min-width: 800px){
+  /*-------------FADER IMAGE BACKGROUND SECTION-----------------*/
+  .ingrotel-image-fader-background{
+    height: 88vh;
+  }
+  .ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4{
+    height: 70vh;
+  }
+  .ingrotel-image-fader-overlay{
+    height: 73vh;
+  }
+  .ingrotel-page-title-container{
+    padding-top: 200px;
+  }
+  .ingrotel-page-title-heading{
+    font-size: 5.8em;
+  }
+  .ingrotel-page-text{
+    font-size: .9em;
+  }
+  .ingrotel-image-fader-blend-area{
+    height: 20vh;
+  }
+
+}
+@media screen and (min-width: 900px){
+  /*-------------FADER IMAGE BACKGROUND SECTION-----------------*/
+  .ingrotel-image-fader-background{
+    height: 98vh;
+  }  
+  .ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4{
+    height: 80vh;
+  }
+  .ingrotel-image-fader-overlay{
+    height: 85vh;
+  }
+  .ingrotel-page-title-container{
+    padding-top: 230px;
+  }
+  .ingrotel-page-title-heading{
+    font-size: 6.8em;
+  }
+  .ingrotel-page-text{
+    font-size: .9em;
+  }
+
+}
+@media screen and (min-width: 990px){
+  /*-------------FADER IMAGE BACKGROUND SECTION-----------------*/
+  .ingrotel-image-fader-background{
+    height: 105vh;
+  }  
+  .ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4{
+    height: 90vh;
+  }
+  .ingrotel-image-fader-overlay{
+    height: 95vh;
+  }
+  .ingrotel-image-fader-blend-area{
+    height: 30vh;
+  }
+
+}
+@media screen and (min-width: 1150px){
+  /*-------------FADER IMAGE BACKGROUND SECTION-----------------*/
+  .ingrotel-image-fader-background{
+    height: 100vh;
+  }  
+  .ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4{
+    height: 100vh;
+  }
+  .ingrotel-image-fader-overlay{
+    height: 100vh;
+  }
+   .ingrotel-page-title-container{
+    padding-top: 170px;
+  }
+  .ingrotel-page-title-heading-container{
+    border: solid 1px red;
+    width: 700px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+  }
+  .ingrotel-page-title-heading-bg{
+    border: solid 1px #2e2e2e;
+    background-color: #3641ff;
+    position: absolute; 
+    top: 0;
+    left:170px;
+    right:250px;
+    bottom:50px;
+    z-index: -1;
+  }
+  .ingrotel-page-title-heading{
+    border: solid 1px red;
+    width: 600px;
+    height: 150px;
+    text-align: center;
+    line-height: 2px;
+    position: relative;
+    z-index: 107;
+  }
+  .ingrotel-page-heading-bg{
+    // border: solid 1px #252525;
+    // background-color: #3641ff;
+    // position: absolute; 
+    // top: 0;
+    // left:170px;
+    // right:250px;
+    // bottom:50px;
+    // z-index: -1;
+
+
+  }
+  .breadcrumbs-links{
+    border: solid 1px red;
+    position: absolute;
+    top:-10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    li{list-style: none;
+      a{
+        text-decoration: none;
+        color: #fff;
+        font-size: .2em;
+        // padding: 5px;
+      }
+    }
+  }
+  .ingrotel-page-text-container{
+    border: solid 1px red;
+    width: 700px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .ingrotel-page-text{
+    border: solid 1px red;
+    width: 600px;
+    text-align: left;
+  }
+
+
+}
