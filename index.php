@@ -13,23 +13,37 @@ get_header();  ?>
 		</video>
 	</div>
 	<div class="ingrotel-video-overlay"></div>
-	<div class="container">
-	    <div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="hero-heading-container">
-					<h1 class="hero-heading"><?php bloginfo('description'); ?></h1>
-				</div><!-- .hero-heading-container -->
-				<div class="hero-text-container">
-					<p class="hero-text">Ingrotel is a leader in manufacturing and distribution for control cable and electro-mechanical products.
-					</p>
-				</div><!-- .hero-text-container -->
-   
-			</div><!-- .col-lg-12 col-md-12 col-sm-12 col-xs-12 -->
-		</div><!-- .row -->
-	</div><!-- .container -->
+	<div class="hero-content-container">
+		<div class="container">
+		    <div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					
+					<div class="hero-heading-container">
+						<h1 class="hero-heading"><?php bloginfo('description'); ?></h1>
+					</div><!-- .hero-heading-container -->
+					<div class="hero-text-container">
+						<p class="hero-text">Ingrotel is a leader in manufacturing and distribution for control cable and electro-mechanical products.
+						</p>
+					</div><!-- .hero-text-container -->
+	   
+				</div><!-- .col-lg-12 col-md-12 col-sm-12 col-xs-12 -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</div><!-- .hero-content-container -->
+	<div class="home-video-unequal-bottom-boxes">
+		<span class="home-video-unequal-box-1"></span>
+		<span class="home-video-unequal-box-2"></span>
+		<span class="home-video-unequal-box-3"></span>
+		<span class="home-video-unequal-box-4"></span>
+		<span class="home-video-unequal-box-5"></span>
+		<span class="home-video-unequal-box-6"></span>
+		<span class="home-video-unequal-box-7"></span>
+		<span class="home-video-unequal-box-8"></span>
+	</div>
+	
 </div><!-- .ingrotel-video-header -->
 
-	<!-- </header> -->
+	
 
 <section class="about-section-container">
 <div class="container">

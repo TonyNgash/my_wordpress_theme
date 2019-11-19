@@ -895,13 +895,23 @@ h3 {
 /*-------------------------------------------------------------------------*/
 @media screen and (min-width: 1280px) {
   /*=======NAVIGATION MENU===================*/
+  .ingrotel-nav {
+    min-height: 8vh;
+  }
+
   .ingrotel-nav-ul {
     margin-right: 33px;
+    border: solid 1px red;
   }
   .ingrotel-nav-ul li a {
     padding: 18px;
   }
   /*=======HERO=========*/
+  .hero-content-container {
+    background-color: #fff;
+    opacity: 0.5;
+  }
+
   .hero-heading {
     font-size: 10em;
   }
@@ -912,7 +922,9 @@ h3 {
 
   /*========VIDEO=========*/
   .ingrotel-video-header {
-    height: 100vh;
+    height: 120vh;
+    display: unset;
+    align-items: unset;
   }
 
   .fullscreen-video-wrap {
@@ -923,6 +935,39 @@ h3 {
   .ingrotel-video-overlay {
     height: 100vh;
     width: 100vw;
+  }
+
+  /*========VIDEO DECORATION COLUMNS==================*/
+  .home-video-unequal-bottom-boxes {
+    height: 20vh;
+    background-color: blue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  .home-video-unequal-box-1, .home-video-unequal-box-2 {
+    width: 12.5vw;
+    height: 15vh;
+    background-color: #171717;
+  }
+
+  .home-video-unequal-box-3, .home-video-unequal-box-4 {
+    width: 12.5vw;
+    height: 5vh;
+    background-color: #171717;
+  }
+
+  .home-video-unequal-box-5, .home-video-unequal-box-6 {
+    width: 12vw;
+    height: 9vh;
+    background-color: #171717;
+  }
+
+  .home-video-unequal-box-7, .home-video-unequal-box-8 {
+    width: 12vw;
+    height: 15vh;
+    background-color: #171717;
   }
 }
 /*-------------------------------------------------------------------------*/
@@ -943,19 +988,19 @@ h3 {
 }
 
 .ingrotel-fader-image-1 {
-  animation: fade1 10s infinite;
+  animation: fade1 30s infinite;
 }
 
 .ingrotel-fader-image-2 {
-  animation: fade2 10s infinite;
+  animation: fade2 30s infinite;
 }
 
 .ingrotel-fader-image-3 {
-  animation: fade3 10s infinite;
+  animation: fade3 30s infinite;
 }
 
 .ingrotel-fader-image-4 {
-  animation: fade4 10s infinite;
+  animation: fade4 30s infinite;
 }
 
 @keyframes fade1 {
@@ -1031,7 +1076,7 @@ h3 {
   width: 100vw;
   height: 23vh;
   background: #171717;
-  background: linear-gradient(180deg, rgba(23, 23, 23, 0.7346288857) 0%, rgba(23, 23, 23, 0.8774860286) 0%, #171717 100%);
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0.7346288857) 0%, rgba(23, 23, 23, 0.5889706224) 0%, #171717 83%, #171717 100%);
 }
 
 .ingrotel-page-title-container {
@@ -1218,7 +1263,7 @@ h3 {
 @media screen and (min-width: 1150px) {
   /*-------------FADER IMAGE BACKGROUND SECTION-----------------*/
   .ingrotel-image-fader-background {
-    height: 100vh;
+    height: 160vh;
   }
 
   .ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4 {
@@ -1229,69 +1274,265 @@ h3 {
     height: 100vh;
   }
 
-  .ingrotel-page-title-container {
-    padding-top: 170px;
-  }
-
-  .ingrotel-page-title-heading-container {
-    border: solid 1px red;
+  .ingrotel-page-title-container .container {
     width: 700px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    position: relative;
   }
 
   .ingrotel-page-title-heading-bg {
-    border: solid 1px #2e2e2e;
-    background-color: #3641ff;
-    position: absolute;
-    top: 0;
-    left: 170px;
-    right: 250px;
-    bottom: 50px;
-    z-index: -1;
+    position: relative;
+  }
+  .ingrotel-page-title-heading-bg h1 {
+    font-size: 1em;
   }
 
   .ingrotel-page-title-heading {
-    border: solid 1px red;
-    width: 600px;
-    height: 150px;
-    text-align: center;
-    line-height: 2px;
-    position: relative;
-    z-index: 107;
+    position: absolute;
+    left: 26px;
+  }
+  .ingrotel-page-title-heading h1 {
+    line-height: 0;
   }
 
   .breadcrumbs-links {
-    border: solid 1px red;
-    position: absolute;
-    top: -10px;
+    background-color: #3641ff;
+    width: 300px;
+    padding-left: 10px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
   }
   .breadcrumbs-links li {
+    padding-right: 8px;
     list-style: none;
+  }
+  .breadcrumbs-links li:after {
+    content: " >> ";
+    color: #fff;
   }
   .breadcrumbs-links li a {
     text-decoration: none;
     color: #fff;
-    font-size: 0.2em;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-family: "Montserrat", "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
+  }
+  .breadcrumbs-links li a.hover, .breadcrumbs-links li a.focus {
+    color: #fff;
   }
 
   .ingrotel-page-text-container {
-    border: solid 1px red;
-    width: 700px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    width: 440px;
+    padding-top: 65px;
   }
 
-  .ingrotel-page-text {
-    border: solid 1px red;
-    width: 600px;
-    text-align: left;
+  .unequal-bottom-boxes {
+    height: 20vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  .unequal-box-1, .unequal-box-2 {
+    width: 12.5vw;
+    height: 15vh;
+    background-color: #171717;
+  }
+
+  .unequal-box-3, .unequal-box-4 {
+    width: 12.5vw;
+    height: 5vh;
+    background-color: #171717;
+  }
+
+  .unequal-box-5, .unequal-box-6 {
+    width: 12.5vw;
+    height: 9vh;
+    background-color: #171717;
+  }
+
+  .unequal-box-7, .unequal-box-8 {
+    width: 12.5vw;
+    height: 15vh;
+    background-color: #171717;
+  }
+
+  .grid-columns {
+    position: absolute;
+    top: 0;
+    height: 160vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  .grid-column-1 {
+    width: 12.5vw;
+    height: 160vh;
+    position: relative;
+  }
+  .grid-column-1:before {
+    content: "";
+    color: #fff;
+    position: absolute;
+    height: 86%;
+    bottom: 0;
+    opacity: 0.1;
+    width: 1px;
+    background-color: #fff;
+    right: 0px;
+  }
+  .grid-column-1:after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    border: solid 2px #fff;
+    top: 13.1%;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+  }
+
+  .grid-column-2 {
+    width: 12.5vw;
+    height: 160vh;
+    position: relative;
+  }
+  .grid-column-2:before {
+    content: "";
+    position: absolute;
+    height: 35%;
+    bottom: 0;
+    opacity: 0.1;
+    width: 1px;
+    background-color: #fff;
+    right: 0px;
+  }
+  .grid-column-2:after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    border: solid 2px #fff;
+    top: 64.1%;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+  }
+
+  .grid-column-3 {
+    width: 12.5vw;
+    height: 160vh;
+    position: relative;
+  }
+  .grid-column-4 {
+    width: 12.5vw;
+    height: 160vh;
+    position: relative;
+  }
+  .grid-column-4:before {
+    content: "";
+    position: absolute;
+    height: 94%;
+    bottom: 0;
+    opacity: 0.1;
+    width: 1px;
+    background-color: #fff;
+    right: 0px;
+  }
+  .grid-column-4:after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    border: solid 2px #fff;
+    top: 5.1%;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+  }
+
+  .grid-column-5 {
+    width: 12.5vw;
+    height: 160vh;
+    position: relative;
+  }
+  .grid-column-5:before {
+    content: "";
+    position: absolute;
+    height: 44%;
+    bottom: 0;
+    opacity: 0.1;
+    width: 1px;
+    background-color: #fff;
+    right: 0px;
+  }
+  .grid-column-5:after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    border: solid 2px #fff;
+    top: 55.1%;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+  }
+
+  .grid-column-6 {
+    width: 12.5vw;
+    height: 160vh;
+    position: relative;
+  }
+  .grid-column-6:before {
+    content: "";
+    position: absolute;
+    height: 74%;
+    bottom: 0;
+    opacity: 0.1;
+    width: 1px;
+    background-color: #fff;
+    right: 0px;
+  }
+  .grid-column-6:after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    border: solid 2px #fff;
+    top: 25.1%;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+  }
+
+  .grid-column-7 {
+    width: 12.5vw;
+    height: 160vh;
+    position: relative;
+  }
+  .grid-column-7:before {
+    content: "";
+    position: absolute;
+    height: 51%;
+    bottom: 0;
+    opacity: 0.1;
+    width: 1px;
+    background-color: #fff;
+    right: 0px;
+  }
+  .grid-column-7:after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    border: solid 2px #fff;
+    top: 48.1%;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+  }
+
+  .grid-column-8 {
+    width: 12.5vw;
+    height: 160vh;
+    position: relative;
   }
 }
 
