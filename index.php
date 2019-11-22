@@ -6,27 +6,36 @@
 */
 get_header();  ?>
 
-<div class="ingrotel-video-header">
+<section class="ingrotel-video-header">
 	<div class="fullscreen-video-wrap">
-		<video class="video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+		<video class="video" poster="<?php bloginfo('template_url'); ?>/img/video-background-placeholder.png" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
 			<source src="<?php bloginfo('template_url'); ?>/video/earth_video.mp4" type="video/mp4">
 		</video>
 	</div>
 	<div class="ingrotel-video-overlay"></div>
 	<div class="home-video-decorative-columns">
-		<span class="home-video-decorative-column-1"></span>
-		<span class="home-video-decorative-column-2"></span>
-		<span class="home-video-decorative-column-3"></span>
-		<span class="home-video-decorative-column-4"></span>
-		<span class="home-video-decorative-column-5"></span>
-		<span class="home-video-decorative-column-6"></span>
-		<span class="home-video-decorative-column-7"></span>
-		<span class="home-video-decorative-column-8"></span>
+		<div class="deco-columns-container">
+			<span class="home-video-decorative-column-1"></span>
+			<span class="home-video-decorative-column-2"></span>
+			<span class="home-video-decorative-column-3"></span>
+			<span class="home-video-decorative-column-4"></span>
+			<span class="home-video-decorative-column-5"></span>
+			<span class="home-video-decorative-column-6"></span>
+			<span class="home-video-decorative-column-7"></span>
+			<span class="home-video-decorative-column-8"></span>
+		</div>
+		<div class="home-video-unequal-bottom-boxes">
+			<span class="home-video-unequal-box-1"></span>
+			<span class="home-video-unequal-box-2"></span>
+			<span class="home-video-unequal-box-3"></span>
+			<span class="home-video-unequal-box-4"></span>
+			<span class="home-video-unequal-box-5"></span>
+			<span class="home-video-unequal-box-6"></span>
+			<span class="home-video-unequal-box-7"></span>
+			<span class="home-video-unequal-box-8"></span>
+		</div>
 	</div>
 	<div class="hero-content-container">
-		<div class="container">
-		    <div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					
 					<div class="hero-heading-container">
 						<h1 class="hero-heading">solutions for telcom companies</h1>
@@ -36,24 +45,8 @@ get_header();  ?>
 						</p>
 					</div><!-- .hero-text-container -->
 	   
-				</div><!-- .col-lg-12 col-md-12 col-sm-12 col-xs-12 -->
-			</div><!-- .row -->
-		</div><!-- .container -->
 	</div><!-- .hero-content-container -->
-	<div class="home-video-unequal-bottom-boxes">
-		<span class="home-video-unequal-box-1"></span>
-		<span class="home-video-unequal-box-2"></span>
-		<span class="home-video-unequal-box-3"></span>
-		<span class="home-video-unequal-box-4"></span>
-		<span class="home-video-unequal-box-5"></span>
-		<span class="home-video-unequal-box-6"></span>
-		<span class="home-video-unequal-box-7"></span>
-		<span class="home-video-unequal-box-8"></span>
-	</div>
-
-</div><!-- .ingrotel-video-header -->
-
-	
+</section><!-- .ingrotel-video-header -->
 
 <section class="about-section-container">
 <div class="container">
@@ -271,5 +264,4 @@ get_header();  ?>
 		</div><!-- .services-section-text-container -->
 	</div><!-- .container -->
 </section><!-- .services-section-container -->
-
 <?php get_footer();  ?>

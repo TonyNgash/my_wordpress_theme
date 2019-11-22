@@ -181,7 +181,7 @@ h3{
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-    min-height: 8vh;
+    min-height: 57px;
     background-color: #252525;
     text-transform: uppercase;
     font-family: 'PinkSans', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
@@ -191,8 +191,8 @@ h3{
   z-index: 101;
   position: absolute;
   right: 0px;
-  height: 50vh;
-  top:5.8vh;
+  height: 217px;
+  top:41px;
   background-color: #424242;
   display: flex;
   flex-flow: column wrap;
@@ -251,19 +251,18 @@ h3{
 */
 
 .ingrotel-video-header{
-  
-  height: 60vh;
+  height: 522px;
   display: flex;
   align-items: center;
   color: #fff;
-  background-color: #171717;
+  
 }
 .fullscreen-video-wrap{
   position: absolute;
-  top:8vh;
+  height: 418px;
+  top:57px;
   left: 0;
   right: 0;
-  height: 60vh;
   overflow: hidden;
 }
 .video{
@@ -272,33 +271,180 @@ h3{
   }
 
 .ingrotel-video-overlay{
-  height: 60vh;
-  width:100vw;
   position: absolute;
-  top:8vh;
+  height: 418px;
+  top:57px;
   left: 0;
+  right: 0;
   background: rgb(23,23,23);
   background: linear-gradient(180deg, rgba(23,23,23,0.7346288857339811) 0%, rgba(23,23,23,0) 0%, rgba(23,23,23,0.8998949921765581) 83%, rgba(23,23,23,1) 100%);
 
   // background: rgb(10,181,191);
   // background: linear-gradient(180deg, rgba(10,181,191,0.30885857761073177) 0%, rgba(0,0,0,1) 100%);
 }
+/*
+=============================HOME PAGE DECORATIVE COLUMNS======================================== 
+---------------------------------------------------------------------------------
+*/
 
+.home-video-decorative-columns{
+  position: absolute;
+  height: 518px;
+  top:57px;
+  left: 0;
+  right: 0;
+  
+  
+  .deco-columns-container{
+   display: flex;
+   width: 100%;
+   height: 100%;
+   span{
+    width: 12.5%;
+   }
+  }
+}
+.home-video-decorative-column-1{
+  position: relative;
+  &:before{
+    content:'';
+    position: absolute;
+    width: 1px;
+    height: 411px;
+    right:0;
+    bottom: 0;
+    background-color: #fff;
+    opacity:.1;
+  }
+  &:after{
+    content:'';
+    position:absolute;
+    width:.625rem;
+    height:.625rem;
+    border-radius:50%;
+    border:solid 3px #fff;
+    top:95px;
+    right:-4px;
+  }
+
+}
+.home-video-decorative-column-2{
+  
+}
+.home-video-decorative-column-3{
+
+}
+.home-video-decorative-column-4{
+  position: relative;
+  &:before{
+    content:'';
+    position: absolute;
+    width: 1px;
+    height: 465px;
+    right:0;
+    bottom: 0;
+    background-color: #fff;
+    opacity:.1;
+  }
+  &:after{
+    content:'';
+    position:absolute;
+    width:.625rem;
+    height:.625rem;
+    border-radius:50%;
+    border:solid 3px #fff;
+    top:42px;
+    right:-4px;
+  }
+
+}
+.home-video-decorative-column-5{
+  
+}
+.home-video-decorative-column-6{
+  
+}
+.home-video-decorative-column-7{
+  position: relative;
+  &:before{
+    content:'';
+    position: absolute;
+    width: 1px;
+    height: 207px;
+    right:0;
+    bottom: 0;
+    background-color: #fff;
+    opacity:.1;
+  }
+  &:after{
+    content:'';
+    position:absolute;
+    width:.625rem;
+    height:.625rem;
+    border-radius:50%;
+    border:solid 3px #fff;
+    top:300px;
+    right:-4px;
+  }
+
+}
+.home-video-decorative-column-8{
+
+}
+
+
+.home-video-unequal-bottom-boxes{
+
+}
+
+.home-video-unequal-bottom-boxes{
+  position: absolute;
+  z-index: -1;
+  top:418px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  span{
+    width: 12.5%;
+    background-color: #171717;
+
+  }
+
+}
+.home-video-unequal-box-1, .home-video-unequal-box-2{
+
+}
+.home-video-unequal-box-3, .home-video-unequal-box-4{
+  height: 26px;
+}
+.home-video-unequal-box-5, .home-video-unequal-box-6{
+  height: 57px;
+}
+.home-video-unequal-box-7, .home-video-unequal-box-8{
+
+}
 /*
 =============================HOME PAGE HERO SECTION======================================== 
 ---------------------------------------------------------------------------------
 */
-
+.hero-content-container{
+  position: absolute;
+  top:187px;
+  height: 285px;
+  padding-left: 34px;
+  padding-right: 34px;
+  width: 100%;
+}
 .hero-heading-container{
   text-align: left;
-  padding-top: 10px;
+  
 }
 .hero-heading{
   color: #fff;
   text-shadow: 0 1px 2px rgba(0,0,0,0.4);
 }
 .hero-text-container{
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .hero-text{
   font-size: 11px;

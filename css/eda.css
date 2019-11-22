@@ -178,7 +178,7 @@ h3 {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
-  min-height: 8vh;
+  min-height: 57px;
   background-color: #252525;
   text-transform: uppercase;
   font-family: "PinkSans", "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
@@ -188,8 +188,8 @@ h3 {
   z-index: 101;
   position: absolute;
   right: 0px;
-  height: 50vh;
-  top: 5.8vh;
+  height: 217px;
+  top: 41px;
   background-color: #424242;
   display: flex;
   flex-flow: column wrap;
@@ -247,19 +247,18 @@ h3 {
 ---------------------------------------------------------------------------------
 */
 .ingrotel-video-header {
-  height: 60vh;
+  height: 522px;
   display: flex;
   align-items: center;
   color: #fff;
-  background-color: #171717;
 }
 
 .fullscreen-video-wrap {
   position: absolute;
-  top: 8vh;
+  height: 418px;
+  top: 57px;
   left: 0;
   right: 0;
-  height: 60vh;
   overflow: hidden;
 }
 
@@ -269,22 +268,143 @@ h3 {
 }
 
 .ingrotel-video-overlay {
-  height: 60vh;
-  width: 100vw;
   position: absolute;
-  top: 8vh;
+  height: 418px;
+  top: 57px;
   left: 0;
+  right: 0;
   background: #171717;
   background: linear-gradient(180deg, rgba(23, 23, 23, 0.7346288857) 0%, rgba(23, 23, 23, 0) 0%, rgba(23, 23, 23, 0.8998949922) 83%, #171717 100%);
+}
+
+/*
+=============================HOME PAGE DECORATIVE COLUMNS======================================== 
+---------------------------------------------------------------------------------
+*/
+.home-video-decorative-columns {
+  position: absolute;
+  height: 518px;
+  top: 57px;
+  left: 0;
+  right: 0;
+}
+.home-video-decorative-columns .deco-columns-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.home-video-decorative-columns .deco-columns-container span {
+  width: 12.5%;
+}
+
+.home-video-decorative-column-1 {
+  position: relative;
+}
+.home-video-decorative-column-1:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 411px;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  opacity: 0.1;
+}
+.home-video-decorative-column-1:after {
+  content: "";
+  position: absolute;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  border: solid 3px #fff;
+  top: 95px;
+  right: -4px;
+}
+
+.home-video-decorative-column-4 {
+  position: relative;
+}
+.home-video-decorative-column-4:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 465px;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  opacity: 0.1;
+}
+.home-video-decorative-column-4:after {
+  content: "";
+  position: absolute;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  border: solid 3px #fff;
+  top: 42px;
+  right: -4px;
+}
+
+.home-video-decorative-column-7 {
+  position: relative;
+}
+.home-video-decorative-column-7:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 207px;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  opacity: 0.1;
+}
+.home-video-decorative-column-7:after {
+  content: "";
+  position: absolute;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  border: solid 3px #fff;
+  top: 300px;
+  right: -4px;
+}
+
+.home-video-unequal-bottom-boxes {
+  position: absolute;
+  z-index: -1;
+  top: 418px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+}
+.home-video-unequal-bottom-boxes span {
+  width: 12.5%;
+  background-color: #171717;
+}
+
+.home-video-unequal-box-3, .home-video-unequal-box-4 {
+  height: 26px;
+}
+
+.home-video-unequal-box-5, .home-video-unequal-box-6 {
+  height: 57px;
 }
 
 /*
 =============================HOME PAGE HERO SECTION======================================== 
 ---------------------------------------------------------------------------------
 */
+.hero-content-container {
+  position: absolute;
+  top: 187px;
+  height: 285px;
+  padding-left: 34px;
+  padding-right: 34px;
+  width: 100%;
+}
+
 .hero-heading-container {
   text-align: left;
-  padding-top: 10px;
 }
 
 .hero-heading {
@@ -293,7 +413,7 @@ h3 {
 }
 
 .hero-text-container {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .hero-text {
