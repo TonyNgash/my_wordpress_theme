@@ -168,6 +168,12 @@ h3{
   margin-left: 10px;
     a{
       color: #e2e2e2;
+      text-decoration: none;
+      opacity: .7;
+      &:hover,
+      &:focus{
+        opacity: 1;
+      }
     }
 }
 .ingrotel-nav{
@@ -945,8 +951,8 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
     height: 120vh;
     display: unset;
     align-items: unset;
-    // color: #fff;
-    // background-color: #171717;
+    color: #fff;
+    
   }
   .fullscreen-video-wrap{
     height: 100vh;
@@ -960,7 +966,9 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
   }
   /*========VIDEO HOME UNEQUAL BOXES==================*/
   .home-video-unequal-bottom-boxes{
-    height: 15vh;
+    height: 15%;
+    background-color: red;
+    opacity: .5;
     span{
       float: left;
     }

@@ -166,6 +166,11 @@ h3 {
 }
 .ingrotel-logo-box a {
   color: #e2e2e2;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.ingrotel-logo-box a:hover, .ingrotel-logo-box a:focus {
+  opacity: 1;
 }
 
 .ingrotel-nav {
@@ -930,6 +935,7 @@ h3 {
     height: 120vh;
     display: unset;
     align-items: unset;
+    color: #fff;
   }
 
   .fullscreen-video-wrap {
@@ -944,7 +950,9 @@ h3 {
 
   /*========VIDEO HOME UNEQUAL BOXES==================*/
   .home-video-unequal-bottom-boxes {
-    height: 15vh;
+    height: 15%;
+    background-color: red;
+    opacity: 0.5;
   }
   .home-video-unequal-bottom-boxes span {
     float: left;
