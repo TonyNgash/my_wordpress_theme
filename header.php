@@ -28,6 +28,7 @@
 	// endif;
  ?>
 <body <?php body_class(); ?> >
+<div class="site-wide-wrapper">
 
 <header class="top-menu-navigation-section">
 	<nav class="ingrotel-nav">

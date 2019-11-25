@@ -9,10 +9,10 @@ get_header();  ?>
 <!--------==============================================--------->
 <section class="ingrotel-fader-section">
   <div class="ingrotel-fader-image-bg" >
-    <img src="<?php bloginfo('template_url'); ?>/img/image-10">
-    <img src="<?php bloginfo('template_url'); ?>/img/image-9">
-    <img src="<?php bloginfo('template_url'); ?>/img/image-18">
-    <img src="<?php bloginfo('template_url'); ?>/img/image-19">
+    <img src="<?php bloginfo('template_url'); ?>/img/image-10.jpg">
+    <img src="<?php bloginfo('template_url'); ?>/img/image-9.jpg">
+    <img src="<?php bloginfo('template_url'); ?>/img/image-18.jpg">
+    <img src="<?php bloginfo('template_url'); ?>/img/image-19.jpg">
     <div class="ingrotel-fader-overlay"></div>
   </div>
   

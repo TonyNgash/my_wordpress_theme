@@ -10,10 +10,10 @@ get_header();  ?>
 <section class="ingrotel-fader-section">
 
   <div class="ingrotel-fader-image-bg" >
-    <img class="fader-image-1" src="<?php bloginfo('template_url'); ?>/img/image-10">
-    <img class="fader-image-2" src="<?php bloginfo('template_url'); ?>/img/image-9">
-    <img class="fader-image-3" src="<?php bloginfo('template_url'); ?>/img/image-18">
-    <img class="fader-image-4" src="<?php bloginfo('template_url'); ?>/img/image-19">
+    <img class="fader-image-1" src="<?php bloginfo('template_url'); ?>/img/image-10.jpg">
+    <img class="fader-image-2" src="<?php bloginfo('template_url'); ?>/img/image-9.jpg">
+    <img class="fader-image-3" src="<?php bloginfo('template_url'); ?>/img/image-18.jpg">
+    <img class="fader-image-4" src="<?php bloginfo('template_url'); ?>/img/image-19.jpg">
     <div class="ingrotel-fader-overlay"></div>
   </div>
   
@@ -85,10 +85,14 @@ Essentially assures each customer a tailor made solution to its needs, combined 
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <div class="about-section-text-col-left">
               <p class="about-section-left">
-                We are a quick thinking, proactive and solution oriented company. We help telcom companies to develop mechanical solutions that are more cost 
-            effective, efficient and better than ever before. 
-            We have friends and partners throughout the 
-            world to help us turn these ideas into reality. 
+                INGRÖTEL AB Lilla Bommen 6, floor 7, 411 04 Göteborg,
+Sverige
+              </p>
+              <p class="about-section-left">
+                info@ingrotel.se
+Tel : +46 (0)31- 745 0038
+Fax : +46 (0)31 745 00 10
+
               </p>
           </div><!-- .about-section-text-col-left -->
       </div><!-- .col-lg-6 col-md-6 col-sm-6 col-xs-6 -->

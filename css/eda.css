@@ -138,6 +138,11 @@ body {
   background-color: #f5f5f5;
 }
 
+.site-wide-wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
 h1 {
   font-family: "PinkSans", "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
   text-transform: uppercase;
@@ -162,6 +167,10 @@ h3 {
 ============================TOP MENU NAVIGATION================================== 
 ---------------------------------------------------------------------------------
 */
+.top-menu-navigation-section {
+  overflow-x: hidden;
+}
+
 .ingrotel-logo-box {
   margin-left: 10px;
 }

@@ -8,7 +8,7 @@
 get_header();  ?>
 <!--------==============================================--------->
 <section class="home-products-section">
-  <div class="home-products-section-image-bg" style="background-image: url('<?php bloginfo('template_url'); ?>/img/products-section-bg-img');">
+  <div class="home-products-section-image-bg" style="background-image: url('<?php bloginfo('template_url'); ?>/img/products-section-bg-img.jpg');">
     
   </div>
   <div class="products-section-overlay"></div>

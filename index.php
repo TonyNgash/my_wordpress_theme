@@ -134,7 +134,7 @@ get_header();  ?>
 </div><!-- .container -->
 </section><!-- .about-section-container -->
 <section class="home-products-section">
-	<div class="home-products-section-image-bg" style="background-image: url('<?php bloginfo('template_url'); ?>/img/products-section-bg-img');">
+	<div class="home-products-section-image-bg" style="background-image: url('<?php bloginfo('template_url'); ?>/img/products-section-bg-img.jpg');">
 		
 	</div>
 	<div class="products-section-overlay"></div>
@@ -170,7 +170,7 @@ get_header();  ?>
 		<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-1');">
+				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-1.jpg');">
 					<div class="product-name">
 						<h3>Coax Connector</h3>
 					</div>
@@ -178,7 +178,7 @@ get_header();  ?>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-2');">
+				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-2.jpg');">
 					<div class="product-name">
 						<h3>Double Coax</h3>
 					</div>
@@ -186,7 +186,7 @@ get_header();  ?>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-3');">
+				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-3.jpg');">
 					<div class="product-name">
 						<h3>Multi Coax</h3>
 					</div>
@@ -194,7 +194,7 @@ get_header();  ?>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-4');">
+				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-4.jpg');">
 					<div class="product-name">
 						<h3>Balun Cable</h3>
 					</div>
@@ -202,7 +202,7 @@ get_header();  ?>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-5');">
+				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-5.jpg');">
 					<div class="product-name">
 						<h3>Special Cable</h3>
 					</div>
@@ -210,7 +210,7 @@ get_header();  ?>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-6');">
+				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-6.jpg');">
 					<div class="product-name">
 						<h3>Single Coax</h3>
 					</div>
@@ -272,7 +272,7 @@ get_header();  ?>
 				<div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
 		    		<div class="services-section-video-box">
 		      			<div class="video-wrapper video-wrapper--shadow margin-zeta-bottom">
-		                    <div id="video-placeholder" class="video-wrapper__placeholder background-image-setup"  style="background-image: url('<?php bloginfo('template_url'); ?>/img/services-video-overlay');">
+		                    <div id="video-placeholder" class="video-wrapper__placeholder background-image-setup"  style="background-image: url('<?php bloginfo('template_url'); ?>/img/services-video-overlay.jpg');">
 		                    </div>
 		                    <div class="play-button">
 		                    	<div class="play-triangle"></div>

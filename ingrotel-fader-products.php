@@ -10,10 +10,10 @@ get_header();  ?>
 <section class="ingrotel-fader-section">
 
   <div class="ingrotel-fader-image-bg" >
-    <img class="fader-image-1" src="<?php bloginfo('template_url'); ?>/img/image-10">
-    <img class="fader-image-2" src="<?php bloginfo('template_url'); ?>/img/image-9">
-    <img class="fader-image-3" src="<?php bloginfo('template_url'); ?>/img/image-18">
-    <img class="fader-image-4" src="<?php bloginfo('template_url'); ?>/img/image-19">
+    <img class="fader-image-1" src="<?php bloginfo('template_url'); ?>/img/image-10.jpg">
+    <img class="fader-image-2" src="<?php bloginfo('template_url'); ?>/img/image-9.jpg">
+    <img class="fader-image-3" src="<?php bloginfo('template_url'); ?>/img/image-18.jpg">
+    <img class="fader-image-4" src="<?php bloginfo('template_url'); ?>/img/image-19.jpg">
     <div class="ingrotel-fader-overlay"></div>
   </div>
   
@@ -54,7 +54,7 @@ Our products contribute to more efficient and environmentally friendly working f
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-1');">
+          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-1.jpg');">
             <div class="product-name">
               <h3>Coax Connector</h3>
             </div>
@@ -62,7 +62,7 @@ Our products contribute to more efficient and environmentally friendly working f
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-2');">
+          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-2.jpg');">
             <div class="product-name">
               <h3>Double Coax</h3>
             </div>
@@ -70,7 +70,7 @@ Our products contribute to more efficient and environmentally friendly working f
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-3');">
+          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-3.jpg');">
             <div class="product-name">
               <h3>Multi Coax</h3>
             </div>
@@ -78,7 +78,7 @@ Our products contribute to more efficient and environmentally friendly working f
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-4');">
+          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-4.jpg');">
             <div class="product-name">
               <h3>Balun Cable</h3>
             </div>
@@ -86,7 +86,7 @@ Our products contribute to more efficient and environmentally friendly working f
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-5');">
+          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-5.jpg');">
             <div class="product-name">
               <h3>Special Cable</h3>
             </div>
@@ -94,7 +94,7 @@ Our products contribute to more efficient and environmentally friendly working f
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-6');">
+          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-6.jpg');">
             <div class="product-name">
               <h3>Single Coax</h3>
             </div>

@@ -53,5 +53,7 @@
 	</div><!-- .container -->
 </div><!-- .footer-section-bottom-container -->
 <?php wp_footer();  ?>
+
+</div><!-- .side-wide-wrapper -->
 </body>
 </html>

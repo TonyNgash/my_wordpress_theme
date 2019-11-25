@@ -10,10 +10,10 @@ get_header();  ?>
 <section class="ingrotel-fader-section">
 
   <div class="ingrotel-fader-image-bg" >
-    <img class="fader-image-1" src="<?php bloginfo('template_url'); ?>/img/image-10">
-    <img class="fader-image-2" src="<?php bloginfo('template_url'); ?>/img/image-9">
-    <img class="fader-image-3" src="<?php bloginfo('template_url'); ?>/img/image-18">
-    <img class="fader-image-4" src="<?php bloginfo('template_url'); ?>/img/image-19">
+    <img class="fader-image-1" src="<?php bloginfo('template_url'); ?>/img/image-10.jpg">
+    <img class="fader-image-2" src="<?php bloginfo('template_url'); ?>/img/image-9.jpg">
+    <img class="fader-image-3" src="<?php bloginfo('template_url'); ?>/img/image-18.jpg">
+    <img class="fader-image-4" src="<?php bloginfo('template_url'); ?>/img/image-19.jpg">
     <div class="ingrotel-fader-overlay"></div>
   </div>
   
@@ -108,7 +108,7 @@ We are a innovative company in the field of specialty cable assembly. Our focus 
         <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
             <div class="services-section-video-box">
                 <div class="video-wrapper video-wrapper--shadow margin-zeta-bottom">
-                        <div id="video-placeholder" class="video-wrapper__placeholder background-image-setup"  style="background-image: url('<?php bloginfo('template_url'); ?>/img/services-video-overlay');">
+                        <div id="video-placeholder" class="video-wrapper__placeholder background-image-setup"  style="background-image: url('<?php bloginfo('template_url'); ?>/img/services-video-overlay.jpg');">
                         </div>
                         <div class="play-button">
                           <div class="play-triangle"></div>
