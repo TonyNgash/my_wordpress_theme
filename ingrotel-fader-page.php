@@ -1,17 +1,22 @@
 <?php 
 /*
-    Template Name: ingrotel-page
+    Template Name: ingrotel-fader-page
 		This is the header template
 
 		@package tony_ngash_everydayapps
 */
 get_header();  ?>
 <!--------==============================================--------->
-<section class="home-products-section">
-  <div class="home-products-section-image-bg" style="background-image: url('<?php bloginfo('template_url'); ?>/img/products-section-bg-img');">
-    
+<section class="ingrotel-fader-section">
+
+  <div class="ingrotel-fader-image-bg" >
+    <img class="fader-image-1" src="<?php bloginfo('template_url'); ?>/img/image-10">
+    <img class="fader-image-2" src="<?php bloginfo('template_url'); ?>/img/image-9">
+    <img class="fader-image-3" src="<?php bloginfo('template_url'); ?>/img/image-18">
+    <img class="fader-image-4" src="<?php bloginfo('template_url'); ?>/img/image-19">
+    <div class="ingrotel-fader-overlay"></div>
   </div>
-  <div class="products-section-overlay"></div>
+  
   <div class="products-decorative-columns">
     <div class="products-columns-container">
       <span class="products-decorative-column-1"></span>
@@ -23,13 +28,20 @@ get_header();  ?>
       <span class="products-decorative-column-7"></span>
       <span class="products-decorative-column-8"></span>
     </div>
-    
   </div>
-  <div class="home-products-section-content">
-    <div class="home-products-section-title">
-      <h1>products</h1>
+
+  <div class="ingrotel-fader-section-content">
+    <div class="ingrotel-fader-section-title">
+      <div class="fader-page-title-bg"></div>
+      <h1><?php echo $pagename; ?></h1>
+      <div class="fader-page-bread-crumbs">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href=""><?php echo "  -  ".$pagename; ?></a></li>
+        </ul>
+      </div>
     </div>
-    <div class="home-products-section-write-up">
+    <div class="ingrotel-fader-section-write-up">
       <p>
         Ingrotel is a provider of products and solutions in Satcom broadband, 
         data cabling , Microwave components and television distribution. We carry 
@@ -40,60 +52,62 @@ get_header();  ?>
       </p>
     </div>
   </div>
+  <div class="the_fake_space"></div>
   <div class="home-featured-products">
     <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-1');">
-          <div class="product-name">
-            <h3>Coax Connector</h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-1');">
+            <div class="product-name">
+              <h3>Coax Connector</h3>
+            </div>
+            <div class="product-box-overlay"></div>
           </div>
-          <div class="product-box-overlay"></div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-2');">
-          <div class="product-name">
-            <h3>Double Coax</h3>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-2');">
+            <div class="product-name">
+              <h3>Double Coax</h3>
+            </div>
+            <div class="product-box-overlay"></div>
           </div>
-          <div class="product-box-overlay"></div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-3');">
-          <div class="product-name">
-            <h3>Multi Coax</h3>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-3');">
+            <div class="product-name">
+              <h3>Multi Coax</h3>
+            </div>
+            <div class="product-box-overlay"></div>
           </div>
-          <div class="product-box-overlay"></div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-4');">
-          <div class="product-name">
-            <h3>Balun Cable</h3>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-4');">
+            <div class="product-name">
+              <h3>Balun Cable</h3>
+            </div>
+            <div class="product-box-overlay"></div>
           </div>
-          <div class="product-box-overlay"></div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-5');">
-          <div class="product-name">
-            <h3>Special Cable</h3>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-5');">
+            <div class="product-name">
+              <h3>Special Cable</h3>
+            </div>
+            <div class="product-box-overlay"></div>
           </div>
-          <div class="product-box-overlay"></div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-6');">
-          <div class="product-name">
-            <h3>Single Coax</h3>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-6');">
+            <div class="product-name">
+              <h3>Single Coax</h3>
+            </div>
+            <div class="product-box-overlay"></div>
           </div>
-          <div class="product-box-overlay"></div>
         </div>
-      </div>
-    </div><!-- .row -->
-  </div><!-- .container -->
+      </div><!-- .row -->
+    </div><!-- .container -->
   </div>
+
   <div class="products-unequal-bottom-boxes">
     <span class="products-unequal-box-1"></span>
     <span class="products-unequal-box-2"></span>
@@ -104,76 +118,9 @@ get_header();  ?>
     <span class="products-unequal-box-7"></span>
     <span class="products-unequal-box-8"></span>
   </div>
+
 </section>
-<section class="ingrotel-image-fader-background">
-  <img src="<?php bloginfo('template_url'); ?>/img/image-10" class="ingrotel-fader-image-1">
-  <img src="<?php bloginfo('template_url'); ?>/img/image-9" class="ingrotel-fader-image-2">
-  <img src="<?php bloginfo('template_url'); ?>/img/image-18" class="ingrotel-fader-image-3">
-  <img src="<?php bloginfo('template_url'); ?>/img/image-19" class="ingrotel-fader-image-4">
-  
-<!--   <div class="fg">
-    
-  </div> -->
-  <div class="ingrotel-image-fader-overlay"></div>
-  <div class="ingrotel-page-title-container"> 
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="ingrotel-page-title-heading-container">
-                  
-                  <div class="ingrotel-page-title-heading-bg">
-                    <div class="ingrotel-page-title-heading">
-                      <h1><?php echo $pagename; ?></h1>
-                    </div>
-                    <ul class="breadcrumbs-links">
-                      <li><a href="#">home</a></li>
-                      <li><a href="#"><?php echo $pagename; ?></a></li>
-                    </ul>
-                  </div>
-                  
-              </div><!-- .ingrotel-page-title-heading-container -->
-              <div class="ingrotel-page-text-container">
-                  <p class="ingrotel-page-text">
-                    Ingrotel is a provider of products and solutions in Satcom broadband, 
-                    data cabling , Microwave components and television distribution. 
-                    <br>
-                    <br>
-                    We carry 
-                    only quality products from leading European manufacturers. This enables us 
-                    to be a supplier to our customers in a very reliable terms. 
-                    <br>
-                    <br>
-                    We only sell the 
-                    products to distributors, installers, cable TV companies of radio, television 
-                    and electronic equipment.
-                  </p>
-              </div><!-- .ingrotel-page-text-container -->
-          </div><!-- .col-lg-12 col-md-12 col-sm-12 col-xs-12 -->
-      </div><!-- .row -->
-    </div><!-- .container -->
-  </div><!-- .ingrotel-page-title-container -->
-  <!-- <div class="ingrotel-image-fader-blend-area"></div> -->
-  <div class="unequal-bottom-boxes">
-    <div class="unequal-box-1"></div>
-    <div class="unequal-box-2"></div>
-    <div class="unequal-box-3"></div>
-    <div class="unequal-box-4"></div>
-    <div class="unequal-box-5"></div>
-    <div class="unequal-box-6"></div>
-    <div class="unequal-box-7"></div>
-    <div class="unequal-box-8"></div>
-  </div>
-  <div class="grid-columns">
-    <span class="grid-column-1"></span>
-    <span class="grid-column-2"></span>
-    <span class="grid-column-3"></span>
-    <span class="grid-column-4"></span>
-    <span class="grid-column-5"></span>
-    <span class="grid-column-6"></span>
-    <span class="grid-column-7"></span>
-    <span class="grid-column-8"></span>
-  </div>
-</section><!-- .ingrotel-image-fader-background -->
+
 <section class="about-section-container">
 <div class="container">
   <div class="row">

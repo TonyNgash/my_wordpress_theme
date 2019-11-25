@@ -133,32 +133,41 @@ get_header();  ?>
 	</div><!-- .about-section-virtues-container -->
 </div><!-- .container -->
 </section><!-- .about-section-container -->
-
-<section class="products-section-container-top background-image-setup" style="background-image: url('<?php bloginfo('template_url'); ?>/img/products-section-bg-img');">
-	<div class="container">
-		<div class="row">
-	    	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-	        	<div class="products-section-heading-container">
-	          		<h1 class="products-section-heading">
-	          			Products
-	          		</h1>
-	        	</div><!-- .products-section-heading-container -->
-	        	<div class="products-section-text-container">
-	          		<p class="products-section-text">
-	          			Ingrotel is a provider of products and solutions in Satcom broadband, 
-						data cabling , Microwave components and television distribution. We carry 
-						only quality products from leading European manufacturers. This enables us 
-						to be a supplier to our customers in a very reliable terms. We only sell the 
-						products to distributors, installers, cable TV companies of radio, television 
-						and electronic equipment.
-					</p>
-	        	</div><!-- .products-section-heading-container -->
-	    	</div><!-- .col-lg-12 col-md-12 col-sm-12 col-xs-12 -->
-		</div><!-- .row -->
+<section class="home-products-section">
+	<div class="home-products-section-image-bg" style="background-image: url('<?php bloginfo('template_url'); ?>/img/products-section-bg-img');">
+		
 	</div>
-</section><!-- .products-section-container-top -->
-<section class="products-section-container-bottom">
-	<div class="container">
+	<div class="products-section-overlay"></div>
+	<div class="products-decorative-columns">
+		<div class="products-columns-container">
+			<span class="products-decorative-column-1"></span>
+			<span class="products-decorative-column-2"></span>
+			<span class="products-decorative-column-3"></span>
+			<span class="products-decorative-column-4"></span>
+			<span class="products-decorative-column-5"></span>
+			<span class="products-decorative-column-6"></span>
+			<span class="products-decorative-column-7"></span>
+			<span class="products-decorative-column-8"></span>
+		</div>
+		
+	</div>
+	<div class="home-products-section-content">
+		<div class="home-products-section-title">
+			<h1>products</h1>
+		</div>
+		<div class="home-products-section-write-up">
+			<p>
+				Ingrotel is a provider of products and solutions in Satcom broadband, 
+				data cabling , Microwave components and television distribution. We carry 
+				only quality products from leading European manufacturers. This enables us 
+				to be a supplier to our customers in a very reliable terms. We only sell the 
+				products to distributors, installers, cable TV companies of radio, television 
+				and electronic equipment.
+			</p>
+		</div>
+	</div>
+	<div class="home-featured-products">
+		<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="product-box" style="background-image: url('<?php bloginfo('template_url'); ?>/img/product-1');">
@@ -209,10 +218,19 @@ get_header();  ?>
 				</div>
 			</div>
 		</div><!-- .row -->
+	</div><!-- .container -->
 	</div>
-		<!-- </div> --><!-- .products-section-products-bg -->
-	</div><!-- .container-fluid -->
-</section><!-- .products-section-container -->
+	<div class="products-unequal-bottom-boxes">
+		<span class="products-unequal-box-1"></span>
+		<span class="products-unequal-box-2"></span>
+		<span class="products-unequal-box-3"></span>
+		<span class="products-unequal-box-4"></span>
+		<span class="products-unequal-box-5"></span>
+		<span class="products-unequal-box-6"></span>
+		<span class="products-unequal-box-7"></span>
+		<span class="products-unequal-box-8"></span>
+	</div>
+</section>
 
 <section class="services-section-container">
 	<div class="container">

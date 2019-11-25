@@ -1,17 +1,21 @@
 <?php 
 /*
-    Template Name: ingrotel-page
+    Template Name: ingrotel-fader-page
 		This is the header template
 
 		@package tony_ngash_everydayapps
 */
 get_header();  ?>
 <!--------==============================================--------->
-<section class="home-products-section">
-  <div class="home-products-section-image-bg" style="background-image: url('<?php bloginfo('template_url'); ?>/img/products-section-bg-img');">
-    
+<section class="ingrotel-fader-section">
+  <div class="ingrotel-fader-image-bg" >
+    <img src="<?php bloginfo('template_url'); ?>/img/image-10">
+    <img src="<?php bloginfo('template_url'); ?>/img/image-9">
+    <img src="<?php bloginfo('template_url'); ?>/img/image-18">
+    <img src="<?php bloginfo('template_url'); ?>/img/image-19">
+    <div class="ingrotel-fader-overlay"></div>
   </div>
-  <div class="products-section-overlay"></div>
+  
   <div class="products-decorative-columns">
     <div class="products-columns-container">
       <span class="products-decorative-column-1"></span>
@@ -27,7 +31,7 @@ get_header();  ?>
   </div>
   <div class="home-products-section-content">
     <div class="home-products-section-title">
-      <h1>products</h1>
+      <h1><?php echo $pagename; ?></h1>
     </div>
     <div class="home-products-section-write-up">
       <p>

@@ -1,3 +1,7 @@
+document.body.style.webkitTransform =  'scale(1)';
+document.body.style.msTransform =   'scale(100)';
+document.body.style.transform = 'scale(1)';
+document.body.style.zoom = screen.logicalXDPI / screen.deviceXDPI;
 const navSlide = () => {
 
 	const burger = document.querySelector('.burger');
