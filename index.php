@@ -274,6 +274,9 @@ get_header();  ?>
 		      			<div class="video-wrapper video-wrapper--shadow margin-zeta-bottom">
 		                    <div id="video-placeholder" class="video-wrapper__placeholder background-image-setup"  style="background-image: url('<?php bloginfo('template_url'); ?>/img/services-video-overlay');">
 		                    </div>
+		                    <div class="play-button">
+		                    	<div class="play-triangle"></div>
+		                    </div>
                   		</div>
 		    		</div><!-- .services-section-text-col-right -->
 				</div><!-- .col-lg-8 col-md-8 col-sm-8 col-xs-8 -->

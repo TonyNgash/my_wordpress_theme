@@ -137,6 +137,7 @@
 body{
   font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;
   overflow-x: hidden;
+  background-color: #f5f5f5;
 }
 
 h1{
@@ -459,9 +460,14 @@ h3{
 .about-section-container{
   background-color: #f5f5f5;
   padding-bottom: 100px;
+  padding-top:5rem;
+  .container{
+    background-color: #fff;
+    padding-bottom: 3rem;
+  }
 }
 .about-section-heading-container{
-  margin-top: 100px;
+  margin-top: 5rem;
 }
 .about-section-heading{
   color:#535050;
@@ -763,7 +769,7 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
 }
 .services-section-video-heading{
   background-color: #fff;
-  padding:9px;
+  padding:33px;
     h1{
       font-size: 26px;
       line-height: 0.9em;
@@ -771,7 +777,9 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
     h2{
       font-size: 17px;
     }
-    p{font-size: 12px;
+    p{
+      font-size: 12px;
+      line-height: 2em;
     }
 }
 
@@ -780,6 +788,7 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
   height: 0;
   padding-top: 1.5625rem;
   padding-bottom: 56.25%;
+  background-color: #171717;
 }
 .video-wrapper--shadow {
     -webkit-box-shadow: 0 1.25rem 4.375rem rgba(0,0,0,.5);
@@ -819,6 +828,30 @@ box-shadow: -2px -1px 18px 6px rgba(0,0,0,0.75);
     background-size: cover;
     color: #fff;
     text-align: center;
+    opacity: .5;
+
+}
+.play-button{
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background-color: #3641ff;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.play-triangle{
+  position: relative;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 0;
+  width: 0;
+  border-left: 15px solid #fff;
+
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
 }
 
 /*
@@ -981,6 +1014,13 @@ NEEEW!!!!!!!!!!!!S==========INGROTEL FADER PAGE=============================
     width: 100%;
   }
 }
+.fader-image-1{
+  opacity: 0;
+}
+.fader-image-2{
+
+}
+
 .the_fake_space{
   height:30rem;
   background-color: #171717;
@@ -1026,8 +1066,8 @@ NEEEW!!!!!!!!!!!!S==========INGROTEL FADER PAGE=============================
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(23,23,23);
-  background: linear-gradient(180deg, rgba(23,23,23,0.7346288857339811) 0%, rgba(23,23,23,0) 0%, rgba(23,23,23,0.8998949921765581) 83%, rgba(23,23,23,1) 100%);
+background: rgb(23,23,23);
+background: linear-gradient(180deg, rgba(23,23,23,0.7346288857339811) 0%, rgba(23,23,23,0.6449930313922444) 34%, rgba(23,23,23,0.9335084375547094) 58%, rgba(23,23,23,1) 100%);  
 }
 .fader-image-1{
   animation: fade1 30s infinite;
@@ -1850,6 +1890,10 @@ background: linear-gradient(180deg, rgba(23,23,23,0.7346288857339811) 0%, rgba(2
 }
 .about-section-container{
   padding-bottom: 10rem;
+  .container{
+    background-color: #fff;
+    padding: 5rem 5rem;
+  }
 }
 .about-section-heading {
     
@@ -1857,6 +1901,7 @@ background: linear-gradient(180deg, rgba(23,23,23,0.7346288857339811) 0%, rgba(2
 }
 .about-section-text-container{
     font-size: 1.2em;
+    line-height: 2.3em;
 }
 .about-section-sub-heading-container{
   padding-top:10rem; 
@@ -1876,6 +1921,7 @@ background: linear-gradient(180deg, rgba(23,23,23,0.7346288857339811) 0%, rgba(2
   padding: 20px 300px;
   p{
     font-size: 1.1rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1905,6 +1951,7 @@ background: linear-gradient(180deg, rgba(23,23,23,0.7346288857339811) 0%, rgba(2
 .services-section-text-container{
   p{
     font-size: 1.1rem;
+    line-height: 2.5rem;
   }
 }
 .services-section-video-container{
@@ -2060,7 +2107,7 @@ background: linear-gradient(180deg, rgba(23,23,23,0.7346288857339811) 0%, rgba(2
   /*-------------FADER IMAGE BACKGROUND SECTION-----------------*/
   .ingrotel-image-fader-background{
     height: 98vh;
-  }  
+  }
   .ingrotel-fader-image-1, .ingrotel-fader-image-2, .ingrotel-fader-image-3, .ingrotel-fader-image-4{
     height: 80vh;
   }
